@@ -1,0 +1,48 @@
+<html class=" -webkit-">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet prefetch" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/framework.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="box" id="login" style="display: block; z-index: 1;">
+         <img src="images/logo-white.png" class="logo">  
+         <div class="form-field">
+            <div class="inputholder">
+               <div class="inputicon" style="background: url(images/user.png) no-repeat scroll;"></div>
+               <input type="text" placeholder="Kullanıcı Adı" id="loginUser" v-model="enteredUsername" onchange="inputChanged()" required="">
+            </div>
+            <div class="inputholder">
+               <div class="inputicon" style="background: url(images/key.png) no-repeat scroll;"></div>
+               <input type="password" placeholder="Şifre" id="loginPass" v-model="enteredPassword" onchange="inputChanged()" required="">
+            </div>
+            <div class="buttongroup">           
+               <button class="btn" id="loginbtn" onclick="login()">Giriş</button>
+               <button class="btn red to" id="regbtn" data-to="register">Kayıt</button>
+               <div class="muzikgardas"><p>LVBEL C5 X BATUFLEX - ralli 'babe</p><img src="images/muyzik.png" class="muziklogosu"></div>
+               <input id="loginSave" type="checkbox" class="check" checked>
+            </div>   
+         </div>
+      </div>
+      <div class="box" id="register" style="display: none; z-index: 1;">
+         <img src="images/logo-white.png" class="logo">
+         <div class="form-field">
+            <div class="inputicon" style="background: url(images/user.png) no-repeat scroll;"></div>
+            <input type="text" placeholder="Kullanıcı Adı" id="registerUser" required="">
+            <div class="inputicon" style="background: url(images/key.png) no-repeat scroll;"></div>
+            <input type="password" placeholder="Şifre" id="registerPass">
+            <div class="inputicon" style="background: url(images/key.png) no-repeat scroll;"></div>
+            <input type="password" placeholder="Şifre X2" id="registerRepeatPass">
+            <button class="btn" onclick="register()">Kayıt Ol</button>
+            <button class="btn red to" data-to="login"><i class="fa fa-arrow-left"></i> Geri Dön</button>
+         </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/framework.js"></script>
+            <script src="js/resul.js"></script>
+
+         </div>
+      </div>
+   </body>
+</html>
